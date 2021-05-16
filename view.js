@@ -43,7 +43,7 @@ function inputForm(model){
             if (value >= 0){
                 return true
             } else {
-                return 'Enter a non-negative value'
+                return 'Enter a positive value'
                 }
             }
         },

@@ -15,7 +15,9 @@ function update(input1, input2, model){
     return {
         ...model,
         billAmount: '$'+newBillAmount,
+        pastBillAmount: newBillAmount,
         tipPorcentage: newTipPorcentage+'%',
+        pastTipPorcentage: newTipPorcentage,
         tip: '$'+tip,
         total: '$'+total
     }

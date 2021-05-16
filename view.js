@@ -29,6 +29,8 @@ function getTable(model){
 }
 
 function inputForm(model){
+    const {pastBillAmount} = model
+    const {pastTipPorcentage} = model
     const {input1} = model
     const message1 = 'Bill Amount?'
     const {input2} = model
@@ -38,7 +40,7 @@ function inputForm(model){
         name: 'input1',
         type: 'input',
         message: message1,
-        default: input1,
+        default: pastBillAmount,
         validate: function(value){
             if (value >= 0){
                 return true
@@ -51,7 +53,7 @@ function inputForm(model){
         name: 'input2',
         type: 'input',
         message: message2,
-        default: input2,
+        default: pastTipPorcentage,
         validate: function(value){
             if (value >= 0 && value<=100){
                 return true

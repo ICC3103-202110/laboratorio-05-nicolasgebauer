@@ -1,6 +1,8 @@
 
 function porcentageOfBillAmount(newBillAmount, newTipPorcentage){
-    return (newBillAmount*newTipPorcentage)/100
+    const num = (newBillAmount*newTipPorcentage)/100
+    const numLimited = num.toFixed(2)
+    return numLimited
 }
 
 function billAmountPlusTip(newBillAmount, tip){
